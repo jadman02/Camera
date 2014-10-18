@@ -17,5 +17,30 @@
     </author>
 
 
-    <gap:plugin name="org.apache.cordova.core.camera" />
+
+    <gap:platform name="ios" />
+ 
+<gap:plugin name="org.apache.cordova.inappbrowser">
+<gap:plugin name="org.apache.cordova.core.camera" />
+
+<preference name="phonegap-version" value="3.0.0" /> 
+ <preference name="orientation" value="portrait" />
+ <preference name="DisallowOverscroll" value="true" />
+
+    <feature name="http://api.phonegap.com/1.0/geolocation"/>
+    <feature name="http://api.phonegap.com/1.0/network"/>
+    <feature name="http://api.phonegap.com/1.0/notification"/>
+ <feature name="http://api.phonegap.com/1.0/file"/>
+ 
+<access origin="*" />
+
+ <access origin="*" subdomains="true">
+<access origin="http://smilesavers.net.au"/>
+<access origin="*.akamaihd.net"/>
+<access origin="*.fbcdn.net"/>
+<access origin="graph.facebook.com"/>
+<access origin="api.facebook.com"/>
+<access origin="m.facebook.com"/>
+<access origin="facebook.com"/>
+<access origin="maps.googleapis.com"/>
 </widget>
